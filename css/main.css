@@ -134,7 +134,7 @@
 .int-nosotros h2 {
     font-family: 'Lato', sans-serif;
     font-size: 1rem;
-    color: #2A583D;
+    color: #6d6d6d;
 }
 
 .contenedor-card {
@@ -187,7 +187,7 @@
 .int-microverdes h2 {
     font-family: 'Lato', sans-serif;
     font-size: 1rem;
-    color: #873A61;
+    color: #6d6d6d;
 }
 
 .contenedor-galeria {
@@ -215,6 +215,65 @@
     font-family: 'Lato', sans-serif;
 }
 
+/*---------- MAIN CULTIVO ------------- */
+
+.int-cultivo {
+    text-align: center;
+    margin: 3rem;
+    width: 60%;
+    border-bottom: 1px solid #E2D754;   
+    margin-bottom: 4rem;
+}
+
+.int-cultivo h1 {
+    font-family: 'Fugaz One', cursive;
+    font-size: 2.5rem;
+    color: #E2D754;
+
+}
+
+.int-cultivo h2 {
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    color: #6d6d6d;
+}
+.contenedor-cultivo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-cultivo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    margin-bottom: 2rem;
+}
+.card-cultivo img{
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.card-text{
+    padding: 1rem;
+    border: 1px solid #d0d0d0;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    font-family: 'Lato', sans-serif;
+}
+
+.card-text h3{
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.card-text p{
+    font-size: 1rem;
+}
 
 /*---------- MEDIA QUERY TABLET ------------- */
 
@@ -238,6 +297,28 @@
 
     .int-microverdes {
         width: 65%;
+    }
+
+    .card-cultivo{
+        height: 200px;
+        flex-direction: row;
+        justify-content: center;
+        overflow: hidden;
+        width: 80%;
+    }
+
+    .card-cultivo img{
+        width: auto;
+        height: 100%;
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px;
+    }
+
+    .card-text{
+        width: auto;
+        height: 100%;
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px;
     }
 
 }
@@ -291,6 +372,27 @@
 
     .card-variedad {
         width: 100%;
+    }
+
+    .int-cultivo h1 {
+        font-size: 3rem;
+    }
+
+    .int-cultivo h2 {
+        font-size: 1.3rem;
+    }
+
+    .card-cultivo{
+        height: 200px;
+        width: 60%;
+    }
+
+    .card-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: auto;
+        height: 100%;
     }
 
 }
