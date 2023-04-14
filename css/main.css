@@ -1,0 +1,296 @@
+/*---------- RESET------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/*---------- ESTILOS GENERALES ------------- */
+
+
+
+/*---------- HEADER------------- */
+
+/*index fijo opcional
+.nav-index {
+    background-color: #398B79;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+*/
+
+.nav-gral {
+    background-color: #398B79;
+    text-align: center;
+}
+
+.logo {
+    width: 8rem;
+    height: auto;
+}
+
+.btn-menu {
+    border: 2px solid #A9CEBC;
+    padding: 0.2rem;
+}
+
+.btn-menu img {
+    width: 2.3rem;
+    height: auto;
+}
+
+.btn-menu:focus {
+    box-shadow: none;
+}
+
+.menu-color {
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+
+}
+
+/*---------- FOOTER ------------- */
+
+.bx-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #5d5d5d;
+    padding: 0.6rem 0;
+}
+
+.bx-redes {
+    margin-bottom: 0.7rem;
+}
+
+.bx-redes a {
+    color: #EDE977;
+    margin: 1rem 0.8rem;
+}
+
+.bx-footer p {
+    font-family: 'Lato', sans-serif;
+    color: #fff;
+    font-size: 0.7rem;
+}
+
+/*---------- MAIN INDEX ------------- */
+
+.contenedor-index {
+    background-image: url(../img/index.png);
+    background-size: cover;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-index h1 {
+    font-family: 'Fugaz One', cursive;
+    font-size: 2.5rem;
+    color: #efefef;
+    -webkit-text-stroke: 1px rgb(82, 82, 82);
+}
+
+.contenedor-index h2 {
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    color: #efefef;
+}
+
+/*---------- MAIN NOSOTROS ------------- */
+
+
+.contenedor-nosotros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3rem 0;
+}
+
+.int-nosotros {
+    text-align: center;
+    margin: 3rem;
+    width: 70%;
+    border-bottom: 1px solid #398B79;
+    margin-bottom: 3rem;
+}
+
+.int-nosotros h1 {
+    font-family: 'Fugaz One', cursive;
+    font-size: 2.5rem;
+    color: #2A583D;
+
+}
+
+.int-nosotros h2 {
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    color: #2A583D;
+}
+
+.contenedor-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    gap: 2rem;
+}
+
+.card-nosotros {
+    width: 70%;
+}
+
+.card-nosotros h3 {
+    font-weight: 700;
+    font-size: 1.2rem;
+    font-family: 'Lato', sans-serif;
+}
+
+.card-nosotros p {
+    font-size: 1rem;
+    font-family: 'Lato', sans-serif;
+}
+
+/*---------- MAIN MICROVERDES ------------- */
+
+.contenedor-microverdes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3rem 0;
+}
+
+.int-microverdes {
+    text-align: center;
+    margin: 3rem;
+    width: 60%;
+    border-bottom: 1px solid #873A61;   
+    margin-bottom: 4rem;
+}
+
+.int-microverdes h1 {
+    font-family: 'Fugaz One', cursive;
+    font-size: 2.5rem;
+    color: #873A61;
+
+}
+
+.int-microverdes h2 {
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    color: #873A61;
+}
+
+.contenedor-galeria {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    justify-content: center;
+    justify-items: center;
+    gap: 2rem;
+
+}
+
+.card-variedad {
+    width: 60%;
+}
+
+.card-variedad h3 {
+    font-weight: 700;
+    font-size: 1.2rem;
+    font-family: 'Lato', sans-serif;
+}
+
+.card-variedad p {
+    font-size: 1rem;
+    font-family: 'Lato', sans-serif;
+}
+
+
+/*---------- MEDIA QUERY TABLET ------------- */
+
+@media screen and (min-width:600px) {
+    .contenedor-index h1 {
+        font-size: 4rem;
+    }
+
+    .card-nosotros {
+        width: 80%;
+    }
+
+    .contenedor-galeria {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .card-variedad {
+        width: 65%;
+    }
+
+    .int-microverdes {
+        width: 65%;
+    }
+
+}
+
+/*---------- MEDIA QUERY PC ------------- */
+
+
+@media screen and (min-width:1024px) {
+
+    .contenedor-index h1 {
+        font-size: 6rem;
+    }
+
+
+    .contenedor-index h2 {
+        font-size: 2rem;
+    }
+
+    .contenedor-card {
+        flex-direction: row;
+        justify-content: center;
+        align-items: start;
+        gap: 3rem;
+    }
+
+    .int-nosotros h1 {
+        font-size: 3rem;
+    }
+
+    .int-nosotros h2 {
+        font-size: 1.3rem;
+    }
+
+    .card-nosotros {
+        width: 35%;
+    }
+
+    .int-microverdes h1 {
+        font-size: 3rem;
+    }
+
+    .int-microverdes h2 {
+        font-size: 1.3rem;
+    }
+
+    .contenedor-galeria {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        width: 70%;
+    }
+
+    .card-variedad {
+        width: 100%;
+    }
+
+}
