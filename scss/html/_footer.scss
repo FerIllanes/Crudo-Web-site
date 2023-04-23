@@ -1,0 +1,23 @@
+@import "../utilidades/_mixin";
+@import "../utilidades/_variables";
+@import "../utilidades/listas";
+
+/*---------- FOOTER ------------- */
+
+.bx-footer{
+    @include flex-col;
+    background-color: nth($colores , 6 );
+    padding: 0.6rem 0;
+    .bx-redes{
+        margin-bottom: 0.7rem;
+        a{
+            color: nth($colores , 4 );
+            margin: 1rem 0.8;
+        }
+        p{
+            font-family:$fuente-regular;
+            color: nth($colores , 7 );
+            font-size: 0.7rem;
+        }
+    }
+}

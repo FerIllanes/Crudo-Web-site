@@ -1,31 +1,43 @@
+@import "../utilidades/_mixin";
+@import "../utilidades/_variables";
+@import "../utilidades/listas";
+
 /*---------- HEADER------------- */
 
-.nav-gral {
-    background-color: #398B79;
-    text-align: center;
+header{
+    .nav-gral {
+        background-color: $color-primario;
+        text-align: center;
+    }
+    div{
+        .logo {
+            width: 8rem;
+            height: auto;
+        }
+        .btn-menu {
+            border: 2px solid #A9CEBC;
+            padding: 0.2rem;
+            img {
+                width: 2.3rem;
+                height: auto;
+            }
+        }
+        .btn-menu:focus {
+            box-shadow: none;
+        }
+        div{
+            ul{
+                li{
+                    .menu-color {
+                        color:nth($colores, 7 );
+                        font-family: 'Lato', sans-serif;
+                    }
+                }
+            }
+        }
+    }
 }
 
-.logo {
-    width: 8rem;
-    height: auto;
-}
 
-.btn-menu {
-    border: 2px solid #A9CEBC;
-    padding: 0.2rem;
-}
 
-.btn-menu img {
-    width: 2.3rem;
-    height: auto;
-}
 
-.btn-menu:focus {
-    box-shadow: none;
-}
-
-.menu-color {
-    color: #fff;
-    font-family: 'Lato', sans-serif;
-
-}
