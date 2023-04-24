@@ -1,0 +1,24 @@
+@import "../utilidades/_mixin";
+@import "../utilidades/_variables";
+@import "../utilidades/listas";
+@import "../utilidades/_extend";
+
+/*---------- MAIN INDEX ------------- */
+
+.contenedor-index{
+    @include flex-col;
+    background-image: url(../img/index.png);
+    background-size: cover;
+    height: 75vh;
+    h1{
+        @extend %h1;
+        color: nth($colores, 7);
+        -webkit-text-stroke: 1px rgb(82, 82, 82);
+
+    }
+    h2{
+        @extend %h2;
+        color: nth($colores, 7 );
+    }
+    
+}

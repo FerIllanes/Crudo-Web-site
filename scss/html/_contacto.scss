@@ -1,0 +1,64 @@
+@import "../utilidades/_mixin";
+@import "../utilidades/_variables";
+@import "../utilidades/_listas";
+@import "../utilidades/_extend";
+
+/*---------- MAIN CONTACTO ------------- */
+
+.contenedor-contacto {
+    @extend %flex-contenedor;
+
+    .int-contacto {
+        @extend %flex-int;
+        border-bottom: 1px solid nth($colores, 5);
+
+        h1 {
+            @extend %h1;
+            color: nth($colores, 5);
+        }
+
+        h2 {
+            @extend %h2;
+            color: nth($colores, 6);
+        }
+    }
+    .contenedor-formulario{
+        width: 75%;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        margin-bottom: 2rem;
+        form{
+            .label-contacto{
+                display: block;
+                margin-bottom: 5px;
+                font-weight: bold;
+            }
+            .input-contacto, .mensaje{
+                display: block;
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 10px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+            }
+            .mensaje{
+                height: 150px;
+                resize: none;
+            }
+            .input-boton[type="submit"] {
+                background-color: #69CC98;
+                color: #fff;
+                border: none;
+                border-radius: 4px;
+                padding: 10px 20px;
+                cursor: pointer;
+            }
+            .input-boton:hover {
+                background-color: #478864;
+            }
+        }
+    }
+}

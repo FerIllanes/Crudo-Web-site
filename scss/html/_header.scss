@@ -30,7 +30,7 @@ header{
                 li{
                     .menu-color {
                         color:nth($colores, 7 );
-                        font-family: 'Lato', sans-serif;
+                        font-family: $fuente-principal;
                     }
                 }
             }

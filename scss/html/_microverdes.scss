@@ -1,0 +1,34 @@
+@import "../utilidades/_mixin";
+@import "../utilidades/_variables";
+@import "../utilidades/_listas";
+@import "../utilidades/_extend";
+
+/*---------- MAIN MICROVERDES ------------- */
+
+.contenedor-microverdes{
+    @extend %flex-contenedor;
+    .int-microverdes{
+        @extend %flex-int;
+        border-bottom: 1px solid $color-secundario;
+        h1{
+            @extend %h1;
+            color: $color-secundario;
+        }
+        h2{
+            @extend %h2;
+            color: nth($colores, 6 );
+        }
+    }
+    .contenedor-galeria{
+        @include grid-galeria;
+        .card-variedad{
+            width: 60%;
+            h3{
+                @extend %h3;
+            }
+            p{
+                @extend %p;
+            }
+        }
+    }  
+}
