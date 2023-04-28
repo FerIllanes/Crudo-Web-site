@@ -1,0 +1,155 @@
+@import "../utilidades/_mixin";
+@import "../utilidades/_variables";
+@import "../utilidades/_listas";
+@import "../utilidades/_extend";
+
+/*---------- MEDIA QUERY TABLET ------------- */
+
+
+@media screen and (min-width:600px) {
+    .contenedor-index h1 {
+        font-size: 4rem;
+    }
+
+    .contenedor-cultivo {
+        .cont-card-cultivo {
+            .card-cultivo {
+                @include flex-row;
+                height: 200px;
+                overflow: hidden;
+                width: 70%;
+
+                img {
+                    width: auto;
+                    height: 100%;
+                    border-top-left-radius: 3px;
+                    border-bottom-left-radius: 3px;
+                    border-top-right-radius: 0;
+                    border-bottom-right-radius: 0;
+                }
+
+                .card-text {
+                    width: auto;
+                    height: 100%;
+                    border-top-right-radius: 3px;
+                    border-bottom-right-radius: 3px;
+                    border-top-left-radius: 0;
+                    border-bottom-left-radius: 0;
+                }
+            }
+        }
+
+    }
+
+    .contenedor-microverdes {
+        .contenedor-galeria {
+            @include grid-galeria-tablet;
+
+            .card-variedad {
+                width: 100%;
+            }
+        }
+    }
+
+    .contenedor-contacto{
+        .contenedor-formulario{
+            width: 70%;
+        }
+    }
+
+}
+
+/*---------- MEDIA QUERY PC ------------- */
+
+@media screen and (min-width:1024px) {
+    .contenedor-index {
+        h1 {
+            font-size: 6rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+        }
+    }
+
+    .contenedor-nosotros {
+        .int-nosotros {
+            @include h1-h2;
+        }
+
+        .contenedor-card {
+            @include flex-row;
+
+            .card-nosotros {
+                width: 35%;
+                transition: all 0.3s ease-out;
+            }
+
+            .card-nosotros:hover {
+                transform: translateY(-25px);
+                transition: all 0.3s ease-in;
+            }
+        }
+    }
+
+    .contenedor-microverdes {
+        .int-microverdes {
+            @include h1-h2;
+        }
+
+        .contenedor-galeria {
+            @include grid-galeria-pc;
+
+            .card-variedad {
+                width: 100%;
+                position: relative;
+
+                .card-body {
+                    p {
+                        position: absolute;
+                        top: 60px;
+                        left: 0;
+                        visibility: hidden;
+                        opacity: 0;
+                        background-color: rgba(255, 255, 255, 0.8);
+                        padding: 10px;
+                        transition: visibility 0s, opacity 0.5s ease-out;
+                    }
+                }
+            }
+
+            .card-variedad:hover p {
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+    }
+
+    .contenedor-cultivo {
+        .int-cultivo {
+            @include h1-h2;
+        }
+
+        .cont-card-cultivo {
+            width: 70%;
+
+            .card-cultivo {
+                width: 80%;
+
+                .card-text {
+                    @include flex-col;
+                    align-items: start;
+                }
+            }
+        }
+    }
+    .contenedor-contacto{
+        .int-contacto{
+            @include h1-h2;
+            width: 50%;
+        }
+        .contenedor-formulario{
+            width: 50%;
+        }
+    }
+}

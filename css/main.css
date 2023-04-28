@@ -5,6 +5,19 @@
   box-sizing: border-box;
   text-decoration: none; }
 
+/*---------- ANIMACIONES ------------- */
+@keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes mover-fondo {
+  from {
+    background-position: 0 0; }
+  to {
+    background-position: 100% 0; } }
+
 /*---------- HEADER------------- */
 header .nav-gral {
   background-color: #398B79;
@@ -46,7 +59,7 @@ header div div ul li .menu-color {
       color: #EDE977;
       margin: 1rem 0.8; }
 
-.contenedor-nosotros, .contenedor-microverdes, .contenedor-cultivo, .contenedor-contacto {
+.contenedor-nosotros, .contenedor-microverdes, .contenedor-cultivo {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -57,7 +70,13 @@ header div div ul li .menu-color {
   text-align: center;
   margin: 3rem;
   width: 70%;
-  margin-bottom: 3rem; }
+  margin-bottom: 3rem;
+  opacity: 0;
+  animation: fadein 0.6s ease-in-out forwards; }
+
+.contenedor-nosotros .contenedor-card .card-nosotros, .contenedor-microverdes .contenedor-galeria .card-variedad, .contenedor-cultivo .cont-card-cultivo .card-cultivo {
+  width: 70%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); }
 
 .contenedor-index h1, .contenedor-nosotros .int-nosotros h1, .contenedor-microverdes .int-microverdes h1, .contenedor-cultivo .int-cultivo h1, .contenedor-contacto .int-contacto h1 {
   font-family: "Fugaz One", cursive;
@@ -67,13 +86,13 @@ header div div ul li .menu-color {
   font-family: "Lato", sans-serif;
   font-size: 1rem; }
 
-.contenedor-nosotros .contenedor-card h3, .contenedor-microverdes .contenedor-galeria .card-variedad h3, .contenedor-cultivo .card-cultivo .card-text h3 {
+.contenedor-nosotros .contenedor-card h3, .contenedor-microverdes .contenedor-galeria .card-variedad .card-body h3, .contenedor-cultivo .cont-card-cultivo .card-cultivo .card-text h3 {
   font-family: "Lato", sans-serif;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 700; }
 
-.contenedor-nosotros .contenedor-card p, .contenedor-microverdes .contenedor-galeria .card-variedad p, .contenedor-cultivo .card-cultivo .card-text p {
-  font-size: 1rem;
+.contenedor-nosotros .contenedor-card p, .contenedor-microverdes .contenedor-galeria .card-variedad .card-body p, .contenedor-cultivo .cont-card-cultivo .card-cultivo .card-text p {
+  font-size: 0.8rem;
   font-family: "Lato", sans-serif; }
 
 /*---------- MAIN INDEX ------------- */
@@ -84,14 +103,19 @@ header div div ul li .menu-color {
   flex-direction: column;
   background-image: url(../img/index.png);
   background-size: cover;
-  height: 75vh; }
+  height: 75vh;
+  animation: mover-fondo 30s linear infinite alternate; }
   .contenedor-index h1 {
     color: #FFFFFF;
-    -webkit-text-stroke: 1px #525252; }
+    -webkit-text-stroke: 1px #525252;
+    opacity: 0;
+    animation: fadein 0.6s ease-in-out forwards; }
   .contenedor-index h2 {
-    color: #FFFFFF; }
+    color: #FFFFFF;
+    opacity: 0;
+    animation: fadein 0.6s ease-in-out forwards; }
 
-.contenedor-nosotros, .contenedor-microverdes, .contenedor-cultivo, .contenedor-contacto {
+.contenedor-nosotros, .contenedor-microverdes, .contenedor-cultivo {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -102,7 +126,13 @@ header div div ul li .menu-color {
   text-align: center;
   margin: 3rem;
   width: 70%;
-  margin-bottom: 3rem; }
+  margin-bottom: 3rem;
+  opacity: 0;
+  animation: fadein 0.6s ease-in-out forwards; }
+
+.contenedor-nosotros .contenedor-card .card-nosotros, .contenedor-microverdes .contenedor-galeria .card-variedad, .contenedor-cultivo .cont-card-cultivo .card-cultivo {
+  width: 70%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); }
 
 .contenedor-index h1, .contenedor-nosotros .int-nosotros h1, .contenedor-microverdes .int-microverdes h1, .contenedor-cultivo .int-cultivo h1, .contenedor-contacto .int-contacto h1 {
   font-family: "Fugaz One", cursive;
@@ -112,13 +142,13 @@ header div div ul li .menu-color {
   font-family: "Lato", sans-serif;
   font-size: 1rem; }
 
-.contenedor-nosotros .contenedor-card h3, .contenedor-microverdes .contenedor-galeria .card-variedad h3, .contenedor-cultivo .card-cultivo .card-text h3 {
+.contenedor-nosotros .contenedor-card h3, .contenedor-microverdes .contenedor-galeria .card-variedad .card-body h3, .contenedor-cultivo .cont-card-cultivo .card-cultivo .card-text h3 {
   font-family: "Lato", sans-serif;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 700; }
 
-.contenedor-nosotros .contenedor-card p, .contenedor-microverdes .contenedor-galeria .card-variedad p, .contenedor-cultivo .card-cultivo .card-text p {
-  font-size: 1rem;
+.contenedor-nosotros .contenedor-card p, .contenedor-microverdes .contenedor-galeria .card-variedad .card-body p, .contenedor-cultivo .cont-card-cultivo .card-cultivo .card-text p {
+  font-size: 0.8rem;
   font-family: "Lato", sans-serif; }
 
 /*---------- MAIN NOSOTROS ------------- */
@@ -136,10 +166,8 @@ header div div ul li .menu-color {
   flex-direction: column;
   margin-top: 2rem;
   gap: 2rem; }
-  .contenedor-nosotros .contenedor-card .card-nosotros {
-    width: 70%; }
 
-.contenedor-nosotros, .contenedor-microverdes, .contenedor-cultivo, .contenedor-contacto {
+.contenedor-nosotros, .contenedor-microverdes, .contenedor-cultivo {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -150,7 +178,13 @@ header div div ul li .menu-color {
   text-align: center;
   margin: 3rem;
   width: 70%;
-  margin-bottom: 3rem; }
+  margin-bottom: 3rem;
+  opacity: 0;
+  animation: fadein 0.6s ease-in-out forwards; }
+
+.contenedor-nosotros .contenedor-card .card-nosotros, .contenedor-microverdes .contenedor-galeria .card-variedad, .contenedor-cultivo .cont-card-cultivo .card-cultivo {
+  width: 70%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); }
 
 .contenedor-index h1, .contenedor-nosotros .int-nosotros h1, .contenedor-microverdes .int-microverdes h1, .contenedor-cultivo .int-cultivo h1, .contenedor-contacto .int-contacto h1 {
   font-family: "Fugaz One", cursive;
@@ -160,34 +194,35 @@ header div div ul li .menu-color {
   font-family: "Lato", sans-serif;
   font-size: 1rem; }
 
-.contenedor-nosotros .contenedor-card h3, .contenedor-microverdes .contenedor-galeria .card-variedad h3, .contenedor-cultivo .card-cultivo .card-text h3 {
+.contenedor-nosotros .contenedor-card h3, .contenedor-microverdes .contenedor-galeria .card-variedad .card-body h3, .contenedor-cultivo .cont-card-cultivo .card-cultivo .card-text h3 {
   font-family: "Lato", sans-serif;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 700; }
 
-.contenedor-nosotros .contenedor-card p, .contenedor-microverdes .contenedor-galeria .card-variedad p, .contenedor-cultivo .card-cultivo .card-text p {
-  font-size: 1rem;
+.contenedor-nosotros .contenedor-card p, .contenedor-microverdes .contenedor-galeria .card-variedad .card-body p, .contenedor-cultivo .cont-card-cultivo .card-cultivo .card-text p {
+  font-size: 0.8rem;
   font-family: "Lato", sans-serif; }
 
 /*---------- MAIN MICROVERDES ------------- */
 .contenedor-microverdes .int-microverdes {
-  border-bottom: 1px solid #2A583D; }
+  border-bottom: 1px solid #873A61; }
   .contenedor-microverdes .int-microverdes h1 {
-    color: #2A583D; }
+    color: #873A61; }
   .contenedor-microverdes .int-microverdes h2 {
     color: #5d5d5d; }
 
 .contenedor-microverdes .contenedor-galeria {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(6, 1fr);
+  grid-template-rows: repeat(12, 1fr);
   justify-content: center;
   justify-items: center;
   gap: 2rem; }
-  .contenedor-microverdes .contenedor-galeria .card-variedad {
-    width: 60%; }
+  .contenedor-microverdes .contenedor-galeria .card-variedad img {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0; }
 
-.contenedor-nosotros, .contenedor-microverdes, .contenedor-cultivo, .contenedor-contacto {
+.contenedor-nosotros, .contenedor-microverdes, .contenedor-cultivo {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -198,7 +233,13 @@ header div div ul li .menu-color {
   text-align: center;
   margin: 3rem;
   width: 70%;
-  margin-bottom: 3rem; }
+  margin-bottom: 3rem;
+  opacity: 0;
+  animation: fadein 0.6s ease-in-out forwards; }
+
+.contenedor-nosotros .contenedor-card .card-nosotros, .contenedor-microverdes .contenedor-galeria .card-variedad, .contenedor-cultivo .cont-card-cultivo .card-cultivo {
+  width: 70%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); }
 
 .contenedor-index h1, .contenedor-nosotros .int-nosotros h1, .contenedor-microverdes .int-microverdes h1, .contenedor-cultivo .int-cultivo h1, .contenedor-contacto .int-contacto h1 {
   font-family: "Fugaz One", cursive;
@@ -208,13 +249,13 @@ header div div ul li .menu-color {
   font-family: "Lato", sans-serif;
   font-size: 1rem; }
 
-.contenedor-nosotros .contenedor-card h3, .contenedor-microverdes .contenedor-galeria .card-variedad h3, .contenedor-cultivo .card-cultivo .card-text h3 {
+.contenedor-nosotros .contenedor-card h3, .contenedor-microverdes .contenedor-galeria .card-variedad .card-body h3, .contenedor-cultivo .cont-card-cultivo .card-cultivo .card-text h3 {
   font-family: "Lato", sans-serif;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 700; }
 
-.contenedor-nosotros .contenedor-card p, .contenedor-microverdes .contenedor-galeria .card-variedad p, .contenedor-cultivo .card-cultivo .card-text p {
-  font-size: 1rem;
+.contenedor-nosotros .contenedor-card p, .contenedor-microverdes .contenedor-galeria .card-variedad .card-body p, .contenedor-cultivo .cont-card-cultivo .card-cultivo .card-text p {
+  font-size: 0.8rem;
   font-family: "Lato", sans-serif; }
 
 /*---------- MAIN CULTIVO ------------- */
@@ -225,27 +266,33 @@ header div div ul li .menu-color {
   .contenedor-cultivo .int-cultivo h2 {
     color: #5d5d5d; }
 
-.contenedor-cultivo .card-cultivo {
+.contenedor-cultivo .cont-card-cultivo {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 60%;
-  margin-bottom: 2rem; }
-  .contenedor-cultivo .card-cultivo img {
-    width: 100%;
-    height: auto;
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px; }
-  .contenedor-cultivo .card-cultivo .card-text {
-    font-family: "Lato", sans-serif;
-    border: 1px solid #d0d0d0;
-    border-bottom-left-radius: 3px;
-    border-bottom-right-radius: 3px;
-    font-family: 'Lato', sans-serif;
-    padding: 1rem; }
+  margin-top: 2rem;
+  gap: 2rem; }
+  .contenedor-cultivo .cont-card-cultivo .card-cultivo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 2rem; }
+    .contenedor-cultivo .cont-card-cultivo .card-cultivo img {
+      width: 100%;
+      height: auto;
+      border-top-left-radius: 3px;
+      border-top-right-radius: 3px; }
+    .contenedor-cultivo .cont-card-cultivo .card-cultivo .card-text {
+      font-family: "Lato", sans-serif;
+      border: 1px solid #d0d0d0;
+      border-bottom-left-radius: 3px;
+      border-bottom-right-radius: 3px;
+      font-family: 'Lato', sans-serif;
+      padding: 1rem; }
 
-.contenedor-nosotros, .contenedor-microverdes, .contenedor-cultivo, .contenedor-contacto {
+.contenedor-nosotros, .contenedor-microverdes, .contenedor-cultivo {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -256,7 +303,13 @@ header div div ul li .menu-color {
   text-align: center;
   margin: 3rem;
   width: 70%;
-  margin-bottom: 3rem; }
+  margin-bottom: 3rem;
+  opacity: 0;
+  animation: fadein 0.6s ease-in-out forwards; }
+
+.contenedor-nosotros .contenedor-card .card-nosotros, .contenedor-microverdes .contenedor-galeria .card-variedad, .contenedor-cultivo .cont-card-cultivo .card-cultivo {
+  width: 70%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); }
 
 .contenedor-index h1, .contenedor-nosotros .int-nosotros h1, .contenedor-microverdes .int-microverdes h1, .contenedor-cultivo .int-cultivo h1, .contenedor-contacto .int-contacto h1 {
   font-family: "Fugaz One", cursive;
@@ -266,51 +319,201 @@ header div div ul li .menu-color {
   font-family: "Lato", sans-serif;
   font-size: 1rem; }
 
-.contenedor-nosotros .contenedor-card h3, .contenedor-microverdes .contenedor-galeria .card-variedad h3, .contenedor-cultivo .card-cultivo .card-text h3 {
+.contenedor-nosotros .contenedor-card h3, .contenedor-microverdes .contenedor-galeria .card-variedad .card-body h3, .contenedor-cultivo .cont-card-cultivo .card-cultivo .card-text h3 {
   font-family: "Lato", sans-serif;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 700; }
 
-.contenedor-nosotros .contenedor-card p, .contenedor-microverdes .contenedor-galeria .card-variedad p, .contenedor-cultivo .card-cultivo .card-text p {
-  font-size: 1rem;
+.contenedor-nosotros .contenedor-card p, .contenedor-microverdes .contenedor-galeria .card-variedad .card-body p, .contenedor-cultivo .cont-card-cultivo .card-cultivo .card-text p {
+  font-size: 0.8rem;
   font-family: "Lato", sans-serif; }
 
 /*---------- MAIN CONTACTO ------------- */
-.contenedor-contacto .int-contacto {
-  border-bottom: 1px solid #A9CEBC; }
-  .contenedor-contacto .int-contacto h1 {
-    color: #A9CEBC; }
-  .contenedor-contacto .int-contacto h2 {
-    color: #5d5d5d; }
+.contenedor-contacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #A9CEBC; }
+  .contenedor-contacto .int-contacto {
+    border-bottom: 1px solid #FFFFFF; }
+    .contenedor-contacto .int-contacto h1 {
+      color: #FFFFFF; }
+    .contenedor-contacto .int-contacto h2 {
+      color: #5d5d5d; }
+  .contenedor-contacto .contenedor-formulario {
+    width: 75%;
+    background-color: transparent;
+    margin-bottom: 2rem; }
+    .contenedor-contacto .contenedor-formulario form {
+      text-align: right; }
+      .contenedor-contacto .contenedor-formulario form .label-contacto {
+        display: block;
+        margin-bottom: 5px; }
+      .contenedor-contacto .contenedor-formulario form .input-contacto, .contenedor-contacto .contenedor-formulario form .mensaje {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        margin: 1rem 0;
+        border: 1px solid #ccc;
+        border-radius: 1rem; }
+      .contenedor-contacto .contenedor-formulario form .mensaje {
+        height: 150px;
+        resize: none; }
+      .contenedor-contacto .contenedor-formulario form .input-boton[type="submit"] {
+        background-color: #398B79;
+        font-family: "Lato", sans-serif;
+        font-size: 0.8rem;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        padding: 10px 20px;
+        cursor: pointer; }
+      .contenedor-contacto .contenedor-formulario form .input-boton:hover {
+        background-color: #2A583D; }
 
-.contenedor-contacto .contenedor-formulario {
-  width: 75%;
-  padding: 20px;
-  background-color: #fff;
-  border-radius: 5px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-  margin-bottom: 2rem; }
-  .contenedor-contacto .contenedor-formulario form .label-contacto {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold; }
-  .contenedor-contacto .contenedor-formulario form .input-contacto, .contenedor-contacto .contenedor-formulario form .mensaje {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box; }
-  .contenedor-contacto .contenedor-formulario form .mensaje {
-    height: 150px;
-    resize: none; }
-  .contenedor-contacto .contenedor-formulario form .input-boton[type="submit"] {
-    background-color: #69CC98;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    padding: 10px 20px;
-    cursor: pointer; }
-  .contenedor-contacto .contenedor-formulario form .input-boton:hover {
-    background-color: #478864; }
+.contenedor-nosotros, .contenedor-microverdes, .contenedor-cultivo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 3rem 0; }
+
+.contenedor-nosotros .int-nosotros, .contenedor-microverdes .int-microverdes, .contenedor-cultivo .int-cultivo, .contenedor-contacto .int-contacto {
+  text-align: center;
+  margin: 3rem;
+  width: 70%;
+  margin-bottom: 3rem;
+  opacity: 0;
+  animation: fadein 0.6s ease-in-out forwards; }
+
+.contenedor-nosotros .contenedor-card .card-nosotros, .contenedor-microverdes .contenedor-galeria .card-variedad, .contenedor-cultivo .cont-card-cultivo .card-cultivo {
+  width: 70%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); }
+
+.contenedor-index h1, .contenedor-nosotros .int-nosotros h1, .contenedor-microverdes .int-microverdes h1, .contenedor-cultivo .int-cultivo h1, .contenedor-contacto .int-contacto h1 {
+  font-family: "Fugaz One", cursive;
+  font-size: 2.5rem; }
+
+.contenedor-index h2, .contenedor-nosotros .int-nosotros h2, .contenedor-microverdes .int-microverdes h2, .contenedor-cultivo .int-cultivo h2, .contenedor-contacto .int-contacto h2 {
+  font-family: "Lato", sans-serif;
+  font-size: 1rem; }
+
+.contenedor-nosotros .contenedor-card h3, .contenedor-microverdes .contenedor-galeria .card-variedad .card-body h3, .contenedor-cultivo .cont-card-cultivo .card-cultivo .card-text h3 {
+  font-family: "Lato", sans-serif;
+  font-size: 1rem;
+  font-weight: 700; }
+
+.contenedor-nosotros .contenedor-card p, .contenedor-microverdes .contenedor-galeria .card-variedad .card-body p, .contenedor-cultivo .cont-card-cultivo .card-cultivo .card-text p {
+  font-size: 0.8rem;
+  font-family: "Lato", sans-serif; }
+
+/*---------- MEDIA QUERY TABLET ------------- */
+@media screen and (min-width: 600px) {
+  .contenedor-index h1 {
+    font-size: 4rem; }
+  .contenedor-cultivo .cont-card-cultivo .card-cultivo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 200px;
+    overflow: hidden;
+    width: 70%; }
+    .contenedor-cultivo .cont-card-cultivo .card-cultivo img {
+      width: auto;
+      height: 100%;
+      border-top-left-radius: 3px;
+      border-bottom-left-radius: 3px;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0; }
+    .contenedor-cultivo .cont-card-cultivo .card-cultivo .card-text {
+      width: auto;
+      height: 100%;
+      border-top-right-radius: 3px;
+      border-bottom-right-radius: 3px;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0; }
+  .contenedor-microverdes .contenedor-galeria {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    justify-content: center;
+    justify-items: center;
+    gap: 2rem;
+    width: 70%; }
+    .contenedor-microverdes .contenedor-galeria .card-variedad {
+      width: 100%; }
+  .contenedor-contacto .contenedor-formulario {
+    width: 70%; } }
+
+/*---------- MEDIA QUERY PC ------------- */
+@media screen and (min-width: 1024px) {
+  .contenedor-index h1 {
+    font-size: 6rem; }
+  .contenedor-index h2 {
+    font-size: 2rem; }
+  .contenedor-nosotros .int-nosotros h1 {
+    font-size: 3rem; }
+  .contenedor-nosotros .int-nosotros h2 {
+    font-size: 1.3rem; }
+  .contenedor-nosotros .contenedor-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row; }
+    .contenedor-nosotros .contenedor-card .card-nosotros {
+      width: 35%;
+      transition: all 0.3s ease-out; }
+    .contenedor-nosotros .contenedor-card .card-nosotros:hover {
+      transform: translateY(-25px);
+      transition: all 0.3s ease-in; }
+  .contenedor-microverdes .int-microverdes h1 {
+    font-size: 3rem; }
+  .contenedor-microverdes .int-microverdes h2 {
+    font-size: 1.3rem; }
+  .contenedor-microverdes .contenedor-galeria {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-content: center;
+    justify-items: center;
+    gap: 2rem;
+    width: 70%; }
+    .contenedor-microverdes .contenedor-galeria .card-variedad {
+      width: 100%;
+      position: relative; }
+      .contenedor-microverdes .contenedor-galeria .card-variedad .card-body p {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        visibility: hidden;
+        opacity: 0;
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 10px;
+        transition: visibility 0s, opacity 0.5s ease-out; }
+    .contenedor-microverdes .contenedor-galeria .card-variedad:hover p {
+      visibility: visible;
+      opacity: 1; }
+  .contenedor-cultivo .int-cultivo h1 {
+    font-size: 3rem; }
+  .contenedor-cultivo .int-cultivo h2 {
+    font-size: 1.3rem; }
+  .contenedor-cultivo .cont-card-cultivo {
+    width: 70%; }
+    .contenedor-cultivo .cont-card-cultivo .card-cultivo {
+      width: 80%; }
+      .contenedor-cultivo .cont-card-cultivo .card-cultivo .card-text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        align-items: start; }
+  .contenedor-contacto .int-contacto {
+    width: 50%; }
+    .contenedor-contacto .int-contacto h1 {
+      font-size: 3rem; }
+    .contenedor-contacto .int-contacto h2 {
+      font-size: 1.3rem; }
+  .contenedor-contacto .contenedor-formulario {
+    width: 50%; } }

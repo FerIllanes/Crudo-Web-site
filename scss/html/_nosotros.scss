@@ -25,7 +25,7 @@
         margin-top: 2rem;
         gap: 2rem;
         .card-nosotros{
-            width: 70%;
+        @extend %card;
         }
         h3{
             @extend %h3;
@@ -35,3 +35,4 @@
         }
     }    
 }
+

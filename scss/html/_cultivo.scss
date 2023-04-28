@@ -5,42 +5,55 @@
 
 /*---------- MAIN CULTIVO ------------- */
 
-.contenedor-cultivo{
+.contenedor-cultivo {
     @extend %flex-contenedor;
-    .int-cultivo{
+
+    .int-cultivo {
         @extend %flex-int;
-        border-bottom: 1px solid nth($colores, 4 );
-        h1{
+        border-bottom: 1px solid nth($colores, 4);
+
+        h1 {
             @extend %h1;
-            color: nth($colores, 4 )
+            color: nth($colores, 4)
         }
-        h2{
+
+        h2 {
             @extend %h2;
-            color: nth($colores, 6 );
+            color: nth($colores, 6);
         }
     }
-    .card-cultivo{
+
+    .cont-card-cultivo {
         @include flex-col;
-        width: 60%;
-        margin-bottom: 2rem;
-        img{
-            width: 100%;
-            height: auto;
-            border-top-left-radius: 3px;
-            border-top-right-radius: 3px;
-        }
-        .card-text{
-            font-family: $fuente-principal;
-            border: 1px solid #d0d0d0;
-            border-bottom-left-radius: 3px;
-            border-bottom-right-radius: 3px;
-            font-family: 'Lato', sans-serif;
-            padding: 1rem;
-            h3{
-                @extend %h3;
+        margin-top: 2rem;
+        gap: 2rem;
+        .card-cultivo {
+            @include flex-col;
+            @extend %card;
+            margin-bottom: 2rem;
+
+            img {
+                width: 100%;
+                height: auto;
+                border-top-left-radius: 3px;
+                border-top-right-radius: 3px;
             }
-            p{
-                @extend %p;
+
+            .card-text {
+                font-family: $fuente-principal;
+                border: 1px solid #d0d0d0;
+                border-bottom-left-radius: 3px;
+                border-bottom-right-radius: 3px;
+                font-family: 'Lato', sans-serif;
+                padding: 1rem;
+
+                h3 {
+                    @extend %h3;
+                }
+
+                p {
+                    @extend %p;
+                }
             }
         }
     }

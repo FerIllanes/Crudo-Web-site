@@ -6,6 +6,26 @@
     text-decoration: none;
 }
 
+/*---------- ANIMACIONES ------------- */
+
+@keyframes fadein {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes mover-fondo {
+    from {
+      background-position: 0 0;
+    }
+    to {
+      background-position: 100% 0;
+    }
+  }
+
 //html
 @import "./html/_header.scss";
 @import "./html/_footer.scss";
@@ -14,3 +34,4 @@
 @import "./html/_microverdes.scss";
 @import "./html/_cultivo.scss";
 @import "./html/_contacto.scss";
+@import "./html/mediaq.scss";

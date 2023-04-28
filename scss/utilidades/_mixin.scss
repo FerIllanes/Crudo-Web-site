@@ -15,8 +15,40 @@
 @mixin grid-galeria{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-rows: repeat(12, 1fr);
     justify-content: center;
     justify-items: center;
     gap: 2rem;
 }
+
+@mixin grid-galeria-tablet{
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    justify-content: center;
+    justify-items: center;
+    gap: 2rem;
+    width: 70%;
+}
+
+@mixin grid-galeria-pc{
+    display: grid;
+    grid-template-columns:repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-content: center;
+    justify-items: center;
+    gap: 2rem;
+    width: 70%;
+}
+
+
+@mixin h1-h2{
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+}
+
