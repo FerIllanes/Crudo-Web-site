@@ -1,0 +1,18 @@
+@import"./variables";
+@import"./listas";
+
+$estilo-tipografico: (
+  "h1": (font-family: $fuente-secundaria, font-size: 2.5rem, color: $color-primario),
+  "h2": (font-family: $fuente-principal, font-size: 1rem, color: nth($colores, 6)),
+  "h3": (font-family: $fuente-principal, font-size: 1rem, font-weight: 700),
+  "p": (font-family: $fuente-principal, font-size: 0.8rem)
+);
+
+@each $etiqueta, $estilo in $estilo-tipografico {
+    #{$etiqueta} {
+      font-family: map-get($estilo, font-family) ;  
+      font-size: map-get($estilo, font-size);
+      font-weight: map-get($estilo, font-weight);
+      color: map-get($estilo, color);
+    }
+  }

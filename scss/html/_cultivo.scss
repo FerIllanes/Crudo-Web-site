@@ -2,6 +2,7 @@
 @import "../utilidades/_variables";
 @import "../utilidades/_listas";
 @import "../utilidades/_extend";
+@import "../utilidades/_maps";
 
 /*---------- MAIN CULTIVO ------------- */
 
@@ -13,12 +14,10 @@
         border-bottom: 1px solid nth($colores, 4);
 
         h1 {
-            @extend %h1;
             color: nth($colores, 4)
         }
 
         h2 {
-            @extend %h2;
             color: nth($colores, 6);
         }
     }
@@ -46,14 +45,6 @@
                 border-bottom-right-radius: 3px;
                 font-family: 'Lato', sans-serif;
                 padding: 1rem;
-
-                h3 {
-                    @extend %h3;
-                }
-
-                p {
-                    @extend %p;
-                }
             }
         }
     }

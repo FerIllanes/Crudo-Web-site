@@ -44,7 +44,8 @@ header div div ul li .menu-color {
     margin-bottom: 0.7rem; }
     .bx-footer .bx-redes a {
       color: #EDE977;
-      margin: 1rem 0.8; }
+      margin: 1rem 0.8;
+      margin: 0 10px; }
 
 .contenedor-nosotros, .contenedor-microverdes, .contenedor-cultivo {
   display: flex;
@@ -65,22 +66,24 @@ header div div ul li .menu-color {
   width: 70%;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); }
 
-.contenedor-index h1, .contenedor-nosotros .int-nosotros h1, .contenedor-microverdes .int-microverdes h1, .contenedor-cultivo .int-cultivo h1, .contenedor-contacto .int-contacto h1 {
+h1 {
   font-family: "Fugaz One", cursive;
-  font-size: 2.5rem; }
+  font-size: 2.5rem;
+  color: #398B79; }
 
-.contenedor-index h2, .contenedor-nosotros .int-nosotros h2, .contenedor-microverdes .int-microverdes h2, .contenedor-cultivo .int-cultivo h2, .contenedor-contacto .int-contacto h2 {
+h2 {
   font-family: "Lato", sans-serif;
-  font-size: 1rem; }
+  font-size: 1rem;
+  color: #5d5d5d; }
 
-.contenedor-nosotros .contenedor-card h3, .contenedor-microverdes .contenedor-galeria .card-variedad .card-body h3, .contenedor-cultivo .cont-card-cultivo .card-cultivo .card-text h3 {
+h3 {
   font-family: "Lato", sans-serif;
   font-size: 1rem;
   font-weight: 700; }
 
-.contenedor-nosotros .contenedor-card p, .contenedor-microverdes .contenedor-galeria .card-variedad .card-body p, .contenedor-cultivo .cont-card-cultivo .card-cultivo .card-text p {
-  font-size: 0.8rem;
-  font-family: "Lato", sans-serif; }
+p {
+  font-family: "Lato", sans-serif;
+  font-size: 0.8rem; }
 
 /*---------- MAIN INDEX ------------- */
 .contenedor-index {
@@ -121,30 +124,28 @@ header div div ul li .menu-color {
   width: 70%;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); }
 
-.contenedor-index h1, .contenedor-nosotros .int-nosotros h1, .contenedor-microverdes .int-microverdes h1, .contenedor-cultivo .int-cultivo h1, .contenedor-contacto .int-contacto h1 {
+h1 {
   font-family: "Fugaz One", cursive;
-  font-size: 2.5rem; }
+  font-size: 2.5rem;
+  color: #398B79; }
 
-.contenedor-index h2, .contenedor-nosotros .int-nosotros h2, .contenedor-microverdes .int-microverdes h2, .contenedor-cultivo .int-cultivo h2, .contenedor-contacto .int-contacto h2 {
+h2 {
   font-family: "Lato", sans-serif;
-  font-size: 1rem; }
+  font-size: 1rem;
+  color: #5d5d5d; }
 
-.contenedor-nosotros .contenedor-card h3, .contenedor-microverdes .contenedor-galeria .card-variedad .card-body h3, .contenedor-cultivo .cont-card-cultivo .card-cultivo .card-text h3 {
+h3 {
   font-family: "Lato", sans-serif;
   font-size: 1rem;
   font-weight: 700; }
 
-.contenedor-nosotros .contenedor-card p, .contenedor-microverdes .contenedor-galeria .card-variedad .card-body p, .contenedor-cultivo .cont-card-cultivo .card-cultivo .card-text p {
-  font-size: 0.8rem;
-  font-family: "Lato", sans-serif; }
+p {
+  font-family: "Lato", sans-serif;
+  font-size: 0.8rem; }
 
 /*---------- MAIN NOSOTROS ------------- */
 .contenedor-nosotros .int-nosotros {
   border-bottom: 1px solid #398B79; }
-  .contenedor-nosotros .int-nosotros h1 {
-    color: #398B79; }
-  .contenedor-nosotros .int-nosotros h2 {
-    color: #5d5d5d; }
 
 .contenedor-nosotros .contenedor-card {
   display: flex;
@@ -173,22 +174,24 @@ header div div ul li .menu-color {
   width: 70%;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); }
 
-.contenedor-index h1, .contenedor-nosotros .int-nosotros h1, .contenedor-microverdes .int-microverdes h1, .contenedor-cultivo .int-cultivo h1, .contenedor-contacto .int-contacto h1 {
+h1 {
   font-family: "Fugaz One", cursive;
-  font-size: 2.5rem; }
+  font-size: 2.5rem;
+  color: #398B79; }
 
-.contenedor-index h2, .contenedor-nosotros .int-nosotros h2, .contenedor-microverdes .int-microverdes h2, .contenedor-cultivo .int-cultivo h2, .contenedor-contacto .int-contacto h2 {
+h2 {
   font-family: "Lato", sans-serif;
-  font-size: 1rem; }
+  font-size: 1rem;
+  color: #5d5d5d; }
 
-.contenedor-nosotros .contenedor-card h3, .contenedor-microverdes .contenedor-galeria .card-variedad .card-body h3, .contenedor-cultivo .cont-card-cultivo .card-cultivo .card-text h3 {
+h3 {
   font-family: "Lato", sans-serif;
   font-size: 1rem;
   font-weight: 700; }
 
-.contenedor-nosotros .contenedor-card p, .contenedor-microverdes .contenedor-galeria .card-variedad .card-body p, .contenedor-cultivo .cont-card-cultivo .card-cultivo .card-text p {
-  font-size: 0.8rem;
-  font-family: "Lato", sans-serif; }
+p {
+  font-family: "Lato", sans-serif;
+  font-size: 0.8rem; }
 
 /*---------- MAIN MICROVERDES ------------- */
 .contenedor-microverdes .int-microverdes {
@@ -228,22 +231,24 @@ header div div ul li .menu-color {
   width: 70%;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); }
 
-.contenedor-index h1, .contenedor-nosotros .int-nosotros h1, .contenedor-microverdes .int-microverdes h1, .contenedor-cultivo .int-cultivo h1, .contenedor-contacto .int-contacto h1 {
+h1 {
   font-family: "Fugaz One", cursive;
-  font-size: 2.5rem; }
+  font-size: 2.5rem;
+  color: #398B79; }
 
-.contenedor-index h2, .contenedor-nosotros .int-nosotros h2, .contenedor-microverdes .int-microverdes h2, .contenedor-cultivo .int-cultivo h2, .contenedor-contacto .int-contacto h2 {
+h2 {
   font-family: "Lato", sans-serif;
-  font-size: 1rem; }
+  font-size: 1rem;
+  color: #5d5d5d; }
 
-.contenedor-nosotros .contenedor-card h3, .contenedor-microverdes .contenedor-galeria .card-variedad .card-body h3, .contenedor-cultivo .cont-card-cultivo .card-cultivo .card-text h3 {
+h3 {
   font-family: "Lato", sans-serif;
   font-size: 1rem;
   font-weight: 700; }
 
-.contenedor-nosotros .contenedor-card p, .contenedor-microverdes .contenedor-galeria .card-variedad .card-body p, .contenedor-cultivo .cont-card-cultivo .card-cultivo .card-text p {
-  font-size: 0.8rem;
-  font-family: "Lato", sans-serif; }
+p {
+  font-family: "Lato", sans-serif;
+  font-size: 0.8rem; }
 
 /*---------- MAIN CULTIVO ------------- */
 .contenedor-cultivo .int-cultivo {
@@ -298,22 +303,24 @@ header div div ul li .menu-color {
   width: 70%;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); }
 
-.contenedor-index h1, .contenedor-nosotros .int-nosotros h1, .contenedor-microverdes .int-microverdes h1, .contenedor-cultivo .int-cultivo h1, .contenedor-contacto .int-contacto h1 {
+h1 {
   font-family: "Fugaz One", cursive;
-  font-size: 2.5rem; }
+  font-size: 2.5rem;
+  color: #398B79; }
 
-.contenedor-index h2, .contenedor-nosotros .int-nosotros h2, .contenedor-microverdes .int-microverdes h2, .contenedor-cultivo .int-cultivo h2, .contenedor-contacto .int-contacto h2 {
+h2 {
   font-family: "Lato", sans-serif;
-  font-size: 1rem; }
+  font-size: 1rem;
+  color: #5d5d5d; }
 
-.contenedor-nosotros .contenedor-card h3, .contenedor-microverdes .contenedor-galeria .card-variedad .card-body h3, .contenedor-cultivo .cont-card-cultivo .card-cultivo .card-text h3 {
+h3 {
   font-family: "Lato", sans-serif;
   font-size: 1rem;
   font-weight: 700; }
 
-.contenedor-nosotros .contenedor-card p, .contenedor-microverdes .contenedor-galeria .card-variedad .card-body p, .contenedor-cultivo .cont-card-cultivo .card-cultivo .card-text p {
-  font-size: 0.8rem;
-  font-family: "Lato", sans-serif; }
+p {
+  font-family: "Lato", sans-serif;
+  font-size: 0.8rem; }
 
 /*---------- MAIN CONTACTO ------------- */
 .contenedor-contacto {
@@ -377,23 +384,6 @@ header div div ul li .menu-color {
 .contenedor-nosotros .contenedor-card .card-nosotros, .contenedor-microverdes .contenedor-galeria .card-variedad, .contenedor-cultivo .cont-card-cultivo .card-cultivo {
   width: 70%;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); }
-
-.contenedor-index h1, .contenedor-nosotros .int-nosotros h1, .contenedor-microverdes .int-microverdes h1, .contenedor-cultivo .int-cultivo h1, .contenedor-contacto .int-contacto h1 {
-  font-family: "Fugaz One", cursive;
-  font-size: 2.5rem; }
-
-.contenedor-index h2, .contenedor-nosotros .int-nosotros h2, .contenedor-microverdes .int-microverdes h2, .contenedor-cultivo .int-cultivo h2, .contenedor-contacto .int-contacto h2 {
-  font-family: "Lato", sans-serif;
-  font-size: 1rem; }
-
-.contenedor-nosotros .contenedor-card h3, .contenedor-microverdes .contenedor-galeria .card-variedad .card-body h3, .contenedor-cultivo .cont-card-cultivo .card-cultivo .card-text h3 {
-  font-family: "Lato", sans-serif;
-  font-size: 1rem;
-  font-weight: 700; }
-
-.contenedor-nosotros .contenedor-card p, .contenedor-microverdes .contenedor-galeria .card-variedad .card-body p, .contenedor-cultivo .cont-card-cultivo .card-cultivo .card-text p {
-  font-size: 0.8rem;
-  font-family: "Lato", sans-serif; }
 
 /*---------- MEDIA QUERY TABLET ------------- */
 @media screen and (min-width: 600px) {

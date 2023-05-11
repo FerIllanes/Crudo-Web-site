@@ -2,23 +2,15 @@
 @import "../utilidades/_variables";
 @import "../utilidades/_listas";
 @import "../utilidades/_extend";
+@import "../utilidades/_maps";
 /*---------- MAIN NOSOTROS ------------- */
 
 .contenedor-nosotros {
     @extend %flex-contenedor;
-
+    
     .int-nosotros {
         @extend %flex-int;
         border-bottom: 1px solid $color-primario;
-        h1 {
-            @extend %h1;
-            color: $color-primario;
-        }
-    
-        h2 {
-            @extend %h2;
-            color: nth($colores, 6)
-        }
     }
     .contenedor-card {
         @include flex-col;
@@ -26,12 +18,6 @@
         gap: 2rem;
         .card-nosotros{
         @extend %card;
-        }
-        h3{
-            @extend %h3;
-        }
-        p{
-            @extend %p;
         }
     }    
 }

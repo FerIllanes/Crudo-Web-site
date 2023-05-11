@@ -2,6 +2,7 @@
 @import "../utilidades/_variables";
 @import "../utilidades/_listas";
 @import "../utilidades/_extend";
+@import "../utilidades/_maps";
 
 /*---------- MAIN MICROVERDES ------------- */
 
@@ -11,32 +12,19 @@
     .int-microverdes {
         @extend %flex-int;
         border-bottom: 1px solid $color-terciario;
-
         h1 {
-            @extend %h1;
             color: $color-terciario;
         }
-
         h2 {
-            @extend %h2;
             color: nth($colores, 6);
         }
     }
-
     .contenedor-galeria {
         @include grid-galeria;
 
         .card-variedad {
             @extend %card;
-            .card-body{
-                h3 {
-                    @extend %h3;
-                }
-        
-                p {
-                    @extend %p;
-                }
-            }
+
             img{
                 border-top-right-radius: 0;
                 border-top-left-radius: 0;

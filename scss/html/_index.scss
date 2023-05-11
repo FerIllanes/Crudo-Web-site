@@ -1,7 +1,8 @@
 @import "../utilidades/_mixin";
 @import "../utilidades/_variables";
-@import "../utilidades/listas";
+@import "../utilidades/_listas";
 @import "../utilidades/_extend";
+@import "../utilidades/_maps";
 
 /*---------- MAIN INDEX ------------- */
 
@@ -12,7 +13,6 @@
     height: 75vh;
     animation: mover-fondo 30s linear infinite alternate;
     h1{
-        @extend %h1;
         color: nth($colores, 7);
         -webkit-text-stroke: 1px rgb(82, 82, 82);
         opacity: 0;
@@ -20,7 +20,6 @@
 
     }
     h2{
-        @extend %h2;
         color: nth($colores, 7 );
         opacity: 0;
         animation: fadein 0.6s ease-in-out forwards;

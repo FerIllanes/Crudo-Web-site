@@ -2,6 +2,7 @@
 @import "../utilidades/_variables";
 @import "../utilidades/_listas";
 @import "../utilidades/_extend";
+@import "../utilidades/_maps";
 
 /*---------- MAIN CONTACTO ------------- */
 
@@ -12,14 +13,10 @@
     .int-contacto {
         @extend %flex-int;
         border-bottom: 1px solid nth($colores, 7);
-
         h1 {
-            @extend %h1;
             color: nth($colores, 7);
         }
-
         h2 {
-            @extend %h2;
             color: nth($colores, 6);
         }
     }
