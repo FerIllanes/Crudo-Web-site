@@ -2,7 +2,7 @@
 @import "../utilidades/_variables";
 @import "../utilidades/_listas";
 @import "../utilidades/_extend";
-
+@import "../utilidades/_maps";
 /*---------- MEDIA QUERY TABLET ------------- */
 
 
@@ -74,7 +74,12 @@
 
     .contenedor-nosotros {
         .int-nosotros {
-            @include h1-h2;
+            h1{
+                font-size: 3rem;
+            }
+            h2{
+                font-size: 1.3rem;
+            }
         }
 
         .contenedor-card {
@@ -94,7 +99,12 @@
 
     .contenedor-microverdes {
         .int-microverdes {
-            @include h1-h2;
+            h1{
+                font-size: 3rem;
+            }
+            h2{
+                font-size: 1.3rem;
+            }
         }
 
         .contenedor-galeria {
@@ -127,7 +137,12 @@
 
     .contenedor-cultivo {
         .int-cultivo {
-            @include h1-h2;
+            h1{
+                font-size: 3rem;
+            }
+            h2{
+                font-size: 1.3rem;
+            }
         }
 
         .cont-card-cultivo {
@@ -145,11 +160,16 @@
     }
     .contenedor-contacto{
         .int-contacto{
-            @include h1-h2;
+            h1{
+                font-size: 3rem;
+            }
+            h2{
+                font-size: 1.3rem;
+            }
             width: 50%;
         }
         .contenedor-formulario{
-            width: 50%;
+            width: 40%;
         }
     }
 }
